@@ -5,18 +5,23 @@
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1700px;
     margin: 0 auto;
 }
 /* generic */
 body{
     font-family: sans-serif;
     padding-top: 100px;
+    background-color: black;
 }
 
 a{
     color: white;
     text-decoration: none;
+}
+
+h3{
+    font-weight: normal;
 }
 
 /* Header */
@@ -52,9 +57,38 @@ header{
 /* main */
 
 main{
-    height: calc(100vh - 160vh);
+    height: calc(100vh - 160px);
+    overflow: auto;
+    padding-bottom: 50px;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
     
+}
+
+.card{
+    flex-basis: calc(100% / 7);
+    padding: 5px;
+    position: relative;
+}
+
+.card img{
+    display: block;
+    width:100%;
+
+}
+
+.info-card{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+
     
 /* footer */
 
