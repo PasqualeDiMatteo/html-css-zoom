@@ -8,7 +8,9 @@
     max-width: 1700px;
     margin: 0 auto;
 }
+
 /* generic */
+
 body{
     font-family: sans-serif;
     padding-top: 100px;
@@ -22,6 +24,14 @@ a{
 
 h3{
     font-weight: normal;
+
+}
+
+h4{
+    font-weight: normal;
+    color: white;
+    padding:5px;
+
 }
 
 /* Header */
@@ -58,13 +68,13 @@ header{
 
 main{
     height: calc(100vh - 160px);
-    overflow: auto;
+    overflow:auto;
     padding-bottom: 50px;
 }
 
 .row{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     
 }
 
@@ -72,12 +82,12 @@ main{
     flex-basis: calc(100% / 7);
     padding: 5px;
     position: relative;
+    
 }
 
 .card img{
     display: block;
     width:100%;
-
 }
 
 .info-card{
@@ -87,19 +97,55 @@ main{
     background-color: rgba(0, 0, 0, .5);
     color: white;
 }
-
-
-    
+   
 /* footer */
 
 footer{
     height: 80px;
-    background-color: lightgray;
+    background-color: rgb(34, 34, 34);
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-left{
+    flex-basis: 25%;
+    padding: 10px;
+    align-items: center;
+}
+
+.btn{
+   text-align: center; 
+   padding: 10px;
+}
+
+.icon{
+    padding: 15px;
+}
+
+.nav-center{
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.nav-right{
+    flex-basis: 25%;
+    justify-content: flex-end;
+    
+}
+
+.nav-right a{
+    padding: 30px;
+    background-color: rgb(74, 74, 74);
+    color: red;
 }
 
 /* utility */
 
+.flex{
+    display: flex;
+    align-items: center;
+}
